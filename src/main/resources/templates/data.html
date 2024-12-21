@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+<p></p>
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Fonction</th>
+            <th>Salaire</th>
+        </tr>
+        <tr th:each="emp:${employees}">
+            <td>[[${emp.name}]]</td>
+            <td>[[${emp.fonction}]]</td>
+            <td>[[${emp.salaire}]]</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
+
+
+
